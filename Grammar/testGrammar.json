@@ -1,0 +1,17 @@
+{
+  "non_terminals" : ["q1", "q2", "q3"],
+  "terminals" : ["0", "1"],
+  "empty_string" : "epsilon",
+  "start_symbol" : "q1",
+  "productions" : {
+    "q1" : [
+      ["epsilon"],
+      ["1", "q2"],
+      ["1", "q3"],
+      ["0", "0"],
+      ["1"]
+    ],
+    "q2" : [["0", "q2"], ["1", "q3"], ["1"]],
+    "q3" : [["0", "q3"], ["0"]]
+  }
+}
