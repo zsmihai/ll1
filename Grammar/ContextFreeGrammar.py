@@ -74,10 +74,14 @@ class ContextFreeGrammar:
         return symbol in self.__non_terminals
 
     def is_empty_string(self, symbol):
-        return (symbol == self.__empty_string)
+        return symbol == self.__empty_string
 
     def get_productions(self):
         productions = []
         for lsp, rsp in self.__productions.items():
             productions.extend(rsp)
         return productions
+
+    @staticmethod
+    def get_test_grammar():
+        return ContextFreeGrammar.read_grammar_from_file("testGrammar.json")
