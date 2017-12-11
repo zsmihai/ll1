@@ -1,6 +1,7 @@
 import json
 from Grammar.Production import Production
 
+
 class ContextFreeGrammar:
     def __init__(self, non_terminals, terminals, productions, start_symbol, empty_string = "epsilon"):
         self.__non_terminals = set(non_terminals)
