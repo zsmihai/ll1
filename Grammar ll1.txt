@@ -3,14 +3,11 @@ simbol de start: program
 
 terminale: {
 	"data", "end", ";", ",", "=", "[", "]", "char", "int", "(", ")", "+", "-", "or", "*", "/", "%" , "and", 
-	"==", "!=", "<", ">", "<=", ">=", "not", "code", "in", "out", "}", "{", "while", identifier, constant
+	"==", "!=", "<", ">", "<=", ">=", "not", "code", "in", "out", "}", "{", "while", "identifier", "constant"
 }
 
 neterminale: {
-	program, data_segment, code_segment, declaration_list, declaration, simple_declaration, array_declaration, type, simple_declaration_elems, simple_declaration_elems_aux, simple_declaration_elem, simple_declaration_elem_value
-	identifier, expression, expression_aux, array_declaration_elems, term, term_aux, addition_operator, factor, unary_operator, constant, variable, multiplication_operator, relational_operator, code_segment, statement_list, statement, statement_list_aux, simple_statement, io_operation,
-	assigment, variable, indexing, indexed_identifier, structured_statement, if_statement, while_statement, condition
-	
+	"program", "data_segment", "code_segment", "declaration_list", "declaration", "simple_declaration", "array_declaration", "type", "simple_declaration_elems", "simple_declaration_elems_aux", "simple_declaration_elem", "simple_declaration_elem_value", "identifier", "expression", "expression_aux", "array_declaration_elems", "term", "term_aux", "addition_operator", "factor", "unary_operator", "constant", "variable", "multiplication_operator", "relational_operator", "code_segment", "statement_list", "statement", "statement_list_aux", "simple_statement", "io_operation", "assigment", "variable", "indexing", "indexed_identifier", "structured_statement", "if_statement", "while_statement", "condition"
 }
 
 

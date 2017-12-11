@@ -1,0 +1,424 @@
+{
+  "non_terminals": [
+    "program",
+    "data_segment",
+    "code_segment",
+    "declaration_list",
+    "declaration",
+    "simple_declaration",
+    "array_declaration",
+    "type",
+    "simple_declaration_elems",
+    "simple_declaration_elems_aux",
+    "simple_declaration_elem",
+    "simple_declaration_elem_value",
+    "identifier",
+    "expression",
+    "expression_aux",
+    "array_declaration_elems",
+    "term",
+    "term_aux",
+    "addition_operator",
+    "factor",
+    "unary_operator",
+    "constant",
+    "variable",
+    "multiplication_operator",
+    "relational_operator",
+    "code_segment",
+    "statement_list",
+    "statement",
+    "statement_list_aux",
+    "simple_statement",
+    "io_operation",
+    "assignment",
+    "variable",
+    "indexing",
+    "indexed_identifier",
+    "structured_statement",
+    "if_statement",
+    "while_statement",
+    "condition"
+  ],
+  "terminals": [
+    "data",
+    "end",
+    ";",
+    ",",
+    "=",
+    "[",
+    "]",
+    "char",
+    "int",
+    "(",
+    ")",
+    "+",
+    "-",
+    "and",
+    "or",
+    "*",
+    "/",
+    "%",
+    "==",
+    "!=",
+    "<",
+    ">",
+    "<=",
+    ">=",
+    "not",
+    "code",
+    "in",
+    "out",
+    "}",
+    "{",
+    "while",
+    "identifier",
+    "constant"
+  ],
+  "empty_string": "EPSILON",
+  "start_symbol": "program",
+  "productions": {
+    "program": [
+      [
+        "data_segment",
+        "code_segment"
+      ],
+      [
+        "code_segment"
+      ]
+    ],
+    "data_segment": [
+      [
+        "data",
+        "declaration_list",
+        "end",
+        "data"
+      ]
+    ],
+    "declaration_list": [
+      [
+        "declaration",
+        "declaration_list"
+      ],
+      [
+        "EPSILON"
+      ]
+    ],
+    "declaration": [
+      [
+        "simple_declaration"
+      ],
+      [
+        "array_declaration"
+      ]
+    ],
+    "simple_declaration": [
+      [
+        "type",
+        "simple_declaration_elems",
+        ";"
+      ]
+    ],
+    "simple_declaration_elems": [
+      [
+        "simple_declaration_elem",
+        "simple_declaration_elems_aux"
+      ]
+    ],
+    "simple_declaration_elems_aux": [
+      [
+        ",",
+        "simple_declaration_elem",
+        "simple_declaration_elems_aux"
+      ],
+      [
+        "EPSILON"
+      ]
+    ],
+    "simple_declaration_elem": [
+      [
+        "identifier",
+        "simple_declaration_elem_value"
+      ]
+    ],
+    "simple_declaration_elem_value": [
+      [
+        "=",
+        "expression"
+      ],
+      [
+        "EPSILON"
+      ]
+    ],
+    "array_declaration": [
+      [
+        "array",
+        "type",
+        "indexed_identifier"
+      ]
+    ],
+    "type": [
+      [
+        "char"
+      ],
+      [
+        "int"
+      ]
+    ],
+    "expression": [
+      [
+        "term",
+        "expression_aux"
+      ]
+    ],
+    "expression_aux": [
+      [
+        "addition_operator",
+        "term",
+        "expression_aux"
+      ],
+      [
+        "EPSILON"
+      ]
+    ],
+    "term": [
+      [
+        "factor",
+        "term_aux"
+      ]
+    ],
+    "term_aux": [
+      [
+        "multiplication_operator",
+        "factor",
+        "term_aux"
+      ],
+      [
+        "EPSILON"
+      ]
+    ],
+    "factor": [
+      [
+        "unary_operator",
+        "factor"
+      ],
+      [
+        "(",
+        "expression",
+        ")"
+      ],
+      [
+        "constant"
+      ],
+      [
+        "variable"
+      ]
+    ],
+    "addition_operator": [
+      [
+        "+"
+      ],
+      [
+        "-"
+      ],
+      [
+        "or"
+      ]
+    ],
+    "multiplication_operator": [
+      [
+        "*"
+      ],
+      [
+        "/"
+      ],
+      [
+        "%"
+      ],
+      [
+        "and"
+      ]
+    ],
+    "relational_operator": [
+      [
+        "=="
+      ],
+      [
+        "!="
+      ],
+      [
+        "<"
+      ],
+      [
+        ">"
+      ],
+      [
+        "<="
+      ],
+      [
+        ">="
+      ]
+    ],
+    "unary_operator": [
+      [
+        "+"
+      ],
+      [
+        "-"
+      ],
+      [
+        "not"
+      ]
+    ],
+    "code_segment": [
+      [
+        "code",
+        "statement_list",
+        "end",
+        "code"
+      ]
+    ],
+    "statement_list": [
+      [
+        "statement",
+        "statement_list_aux"
+      ]
+    ],
+    "statement_list_aux": [
+      [
+        "statement",
+        "statement_list_aux"
+      ],
+      [
+        "EPSILON"
+      ]
+    ],
+    "statement": [
+      [
+        "simple_statement"
+      ],
+      [
+        "structured_statement"
+      ]
+    ],
+    "simple_statement": [
+      [
+        "assignment"
+      ],
+      [
+        "io_operation",
+        ";"
+      ]
+    ],
+    "io_operation": [
+      [
+        "in",
+        "(",
+        "variable",
+        ")"
+      ],
+      [
+        "out",
+        "(",
+        "expression",
+        ")"
+      ]
+    ],
+    "assignment": [
+      [
+        "variable",
+        "=",
+        "expression"
+      ]
+    ],
+    "variable": [
+      [
+        "identifier",
+        "indexing"
+      ]
+    ],
+    "indexing": [
+      [
+        "[",
+        "variable",
+        "]",
+        "indexing"
+      ],
+      [
+        "EPSILON"
+      ]
+    ],
+    "indexed_identifier": [
+      [
+        "identifier",
+        "[",
+        "variable",
+        "]"
+      ],
+      [
+        "indexed_identifier",
+        "[",
+        "variable",
+        "]"
+      ]
+    ],
+    "structured_statement": [
+      [
+        "if_statement"
+      ],
+      [
+        "while_statement"
+      ]
+    ],
+    "if_statement": [
+      [
+        "if",
+        "(",
+        "condition",
+        ")",
+        "{",
+        "statement_list",
+        "}",
+        "else_statement"
+      ]
+    ],
+    "else_statement": [
+      [
+        "else",
+        "{",
+        "statement_list",
+        "}"
+      ],
+      [
+        "EPSILON"
+      ]
+    ],
+    "while_statement": [
+      [
+        "while",
+        "(",
+        "condition",
+        ")",
+        "{",
+        "statement_list",
+        "}"
+      ]
+    ],
+    "condition": [
+      [
+        "expression",
+        "condition_aux"
+      ]
+    ],
+    "condition_aux": [
+      [
+        "relational_operator",
+        "expression",
+        "condition_aux"
+      ],
+      [
+        "EPSILON"
+      ]
+    ]
+  }
+}
