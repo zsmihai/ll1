@@ -52,5 +52,5 @@ class FirstTable:
         self.__build_first_table()
 
 
-ft = FirstTable(ContextFreeGrammar.get_test_grammar())
-print("pi")
+#ft = FirstTable(ContextFreeGrammar.get_test_grammar())
+#print("pi")
