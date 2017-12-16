@@ -64,7 +64,7 @@ class ContextFreeGrammar:
         self.__check_terminals_nonterminals()
         self.__are_lsps_non_terminal()
 
-    def symbol_in_grammar(self, symbol):
+    def is_symbol_in_grammar(self, symbol):
         return symbol in self.__non_terminals or symbol in self.__terminals or symbol == self.__empty_string
 
     def is_terminal(self, symbol):
