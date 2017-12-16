@@ -11,6 +11,11 @@ class FirstTable:
         for nonterminal in self.__context_free_grammar.get_non_terminals():
             self.__first_table[nonterminal] = set()
 
+        for production in self.__context_free_grammar.get_productions():
+            first_of_right_side = production.get_right_side()[0]
+            if self.__context_free_grammar.is_terminal(first_of_right_side):
+                self.__first_table[production.get_left_side()].add(first_of_right_side)
+
 
     def __build_first_table(self):
         self.__init_first_table()
@@ -45,12 +50,10 @@ class FirstTable:
         return current_set_of_symbols
 
 
-
+    def get_grammar(self):
+        return self.__context_free_grammar
 
     def __init__(self, context_free_grammar : ContextFreeGrammar):
         self.__context_free_grammar = context_free_grammar
         self.__build_first_table()
 
-
-#ft = FirstTable(ContextFreeGrammar.get_test_grammar())
-#print("pi")
