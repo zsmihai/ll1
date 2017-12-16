@@ -12,7 +12,6 @@
     "simple_declaration_elems_aux",
     "simple_declaration_elem",
     "simple_declaration_elem_value",
-    "identifier",
     "expression",
     "expression_aux",
     "array_declaration_elems",
@@ -21,7 +20,6 @@
     "addition_operator",
     "factor",
     "unary_operator",
-    "constant",
     "variable",
     "multiplication_operator",
     "relational_operator",
@@ -34,11 +32,12 @@
     "assignment",
     "variable",
     "indexing",
-    "indexed_identifier",
     "structured_statement",
     "if_statement",
     "while_statement",
-    "condition"
+    "condition",
+    "condition_aux",
+    "else_statement"
   ],
   "terminals": [
     "data",
@@ -73,7 +72,10 @@
     "{",
     "while",
     "identifier",
-    "constant"
+    "constant",
+    "if",
+    "else",
+    "array"
   ],
   "empty_string": "EPSILON",
   "start_symbol": "program",
@@ -154,7 +156,7 @@
       [
         "array",
         "type",
-        "indexed_identifier"
+        "variable"
       ]
     ],
     "type": [
@@ -346,20 +348,6 @@
       ],
       [
         "EPSILON"
-      ]
-    ],
-    "indexed_identifier": [
-      [
-        "identifier",
-        "[",
-        "variable",
-        "]"
-      ],
-      [
-        "indexed_identifier",
-        "[",
-        "variable",
-        "]"
       ]
     ],
     "structured_statement": [
