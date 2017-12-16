@@ -1,0 +1,28 @@
+{
+  "grammar":
+  {
+    "non_terminals" : ["S", "T"],
+    "terminals" : ["a", "b"],
+    "empty_string" : "epsilon",
+    "start_symbol" : "S",
+    "productions" : {
+      "S" : [
+        ["a", "S", "T"]
+      ],
+      "T" : [
+        ["b", "S"],
+        ["epsilon"]
+      ]
+    }
+  },
+  "first_table":
+  {
+    "S" : ["a"],
+    "T" : ["epsilon", "b"]
+  },
+  "follow_table":
+  {
+    "S" : ["epsilon", "b"],
+    "T" : ["epsilon", "b"]
+  }
+}

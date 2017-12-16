@@ -1,0 +1,46 @@
+{
+  "grammar":
+  {
+    "non_terminals" : ["S", "A", "B", "C", "D"],
+    "terminals" : ["a", "(", "+", ")", "*"],
+    "empty_string" : "epsilon",
+    "start_symbol" : "S",
+    "productions" : {
+      "S" : [
+        ["B", "A"]
+      ],
+      "A" : [
+        ["+", "B", "A"],
+        ["epsilon"]
+      ],
+      "B" : [
+        ["D", "C"]
+      ],
+      "C": [
+        ["*", "D", "C"],
+        ["epsilon"]
+      ],
+      "D":[
+        ["(", "S", ")"],
+        ["a"]
+      ]
+    }
+  },
+  "first_table":
+  {
+    "S" : ["(", "a"],
+    "A" : ["+", "epsilon"],
+    "B" : ["(", "a"],
+    "C" : ["*", "epsilon"],
+    "D" : ["(", "a"]
+  },
+  "follow_table":
+  {
+
+    "S" : ["epsilon", ")"],
+    "A" : [")", "epsilon"],
+    "B" : [")", "+", "epsilon"],
+    "C" : ["+", ")", "epsilon"],
+    "D" : ["+", ")", "*", "epsilon"]
+  }
+}
