@@ -5,6 +5,27 @@ from LL1.firstTable import FirstTable
 
 class ParseTable:
 
+    def is_accept(self, symbol):
+        return symbol == "acc"
+
+    def is_pop(self, symbol):
+        return symbol == "pop"
+
+    def get_empty_stack(self):
+        return self.__empty_stack
+
+    def is_production_index(self, symbol):
+        return symbol in self.__indexed_productions.keys()
+
+    def get_grammar(self):
+        return self.__grammar
+
+    def get_production_for_index(self, index):
+        return self.__indexed_productions.get(index, None)
+
+    def __getitem__(self, key):
+        return self.__table.get(key, None)
+
     def __create_empty_stack_symbol(self):
         empty_stack = "$"
         while self.__grammar.is_symbol_in_grammar(empty_stack):
@@ -59,8 +80,3 @@ class ParseTable:
                         key = (production.get_left_side(), follow_non_terminal if not self.__grammar.is_empty_string(follow_non_terminal) else self.__empty_stack)
                         self.__add_to_table(key, production_index)
 
-if __name__ == "__main__":
-    grammar = ContextFreeGrammar.get_test_grammar()
-    ff = FirstTable(grammar)
-    flt = FollowTable(ff)
-    pt = ParseTable(grammar, ff, flt)

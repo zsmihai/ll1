@@ -7,7 +7,7 @@ terminale: {
 }
 
 neterminale: {
-	"program", "data_segment", "code_segment", "declaration_list", "declaration", "simple_declaration", "array_declaration", "type", "simple_declaration_elems", "simple_declaration_elems_aux", "simple_declaration_elem", "simple_declaration_elem_value", "identifier", "expression", "expression_aux", "array_declaration_elems", "term", "term_aux", "addition_operator", "factor", "unary_operator", "constant", "variable", "multiplication_operator", "relational_operator", "code_segment", "statement_list", "statement", "statement_list_aux", "simple_statement", "io_operation", "assigment", "variable", "indexing", "indexed_identifier", "structured_statement", "if_statement", "while_statement", "condition"
+	"program", "data_segment", "code_segment", "declaration_list", "declaration", "simple_declaration", "array_declaration", "type", "simple_declaration_elems", "simple_declaration_elems_aux", "simple_declaration_elem", "simple_declaration_elem_value", "identifier", "expression", "expression_aux", "array_declaration_elems", "term", "term_aux", "addition_operator", "factor", "unary_operator", "constant", "variable", "multiplication_operator", "relational_operator", "code_segment", "statement_list", "statement", "statement_list_aux", "simple_statement", "io_operation", "assigment", "variable", "indexing", "structured_statement", "if_statement", "while_statement", "condition"
 }
 
 
@@ -20,7 +20,7 @@ simple_declaration_elems ---> simple_declaration_elem simple_declaration_elems_a
 simple_declaration_elems_aux --->"," simple_declaration_elem simple_declaration_elems_aux | EPSILON
 simple_declaration_elem ---> identifier simple_declaration_elem_value
 simple_declaration_elem_value ---> "=" expression | EPSILON
-array_declaration ---> "array" type indexed_identifier 
+array_declaration ---> "array" type variable
 type ---> "char" | "int"
 expression ---> term expression_aux
 expression_aux ---> addition_operator term expression_aux | EPSILON
@@ -40,8 +40,6 @@ io_operation ---> "in" "(" variable ")" | "out" "(" expression ")
 assigment ---> variable "=" expression
 variable ---> identifier indexing
 indexing ---> "[" (variable | constant) "]" indexing | EPSILON
-indexed_identifier ---> identifier "[" (variable | constant) "]"|
-						 indexed_identifier "[" (variable | constant) "]"
 structured_statement ---> if_statement | while_statement
 if_statement ---> "if" "(" condition ")" "{" statement_list "}" else_statement
 else_statement ---> "else" "{" statement_list "}" | EPSILON
