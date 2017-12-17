@@ -48,5 +48,5 @@ if __name__ == "__main__":
     ff = FirstTable(grammar)
     flt = FollowTable(ff)
     pt = ParseTable(grammar, ff, flt)
-    parsed = Parser(pt, ["code", "identifier", "=", "identifier", "+", "constant", "end", "code"])
+    parsed = Parser(pt, [3,                 0, 13,              0,  21,           1,    4,    3 ])
     print("a")

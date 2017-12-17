@@ -3,21 +3,25 @@ from Grammar.Production import Production
 
 
 class ContextFreeGrammar:
-    def __init__(self, non_terminals, terminals, productions, start_symbol, empty_string = "epsilon"):
+    def __init__(self, non_terminals, terminals, productions, start_symbol, empty_string="epsilon",
+                 substitution_map=None):
         self.__non_terminals = set(non_terminals)
         self.__terminals = set(terminals)
         self.__start_symbol = start_symbol
         self.__empty_string = empty_string
 
-        self.__productions = self.__transform_productions(productions)
+        self.__substitution_map = substitution_map
+        self.__productions = productions
+
+        self.__perform_substitution()
+        self.__productions = self.__transform_productions()
 
         self.is_context_free_grammar()
 
-    @staticmethod
-    def __transform_productions(productions):
+    def __transform_productions(self):
         productions_dict = dict()
 
-        for lsp, production_list in productions.items():
+        for lsp, production_list in self.__productions.items():
             productions_for_lsp = []
             for production in production_list:
                 productions_for_lsp.append(Production(lsp, production))
@@ -49,7 +53,7 @@ class ContextFreeGrammar:
     def __are_lsps_non_terminal(self):
         for lsp in self.__productions:
             if lsp not in self.__non_terminals:
-                raise ValueError("Left side of production: {0} is not a terminal".format(lsp))
+                raise ValueError("Left side of production: {0} is not a non_terminal".format(lsp))
 
     def __check_terminals_nonterminals(self):
         intersection = self.__terminals.intersection(self.__non_terminals)
@@ -63,6 +67,7 @@ class ContextFreeGrammar:
     def is_context_free_grammar(self):
         self.__check_terminals_nonterminals()
         self.__are_lsps_non_terminal()
+        self.__check_productions()
 
     def is_symbol_in_grammar(self, symbol):
         return symbol in self.__non_terminals or symbol in self.__terminals or symbol == self.__empty_string
@@ -85,3 +90,36 @@ class ContextFreeGrammar:
     @staticmethod
     def get_test_grammar():
         return ContextFreeGrammar.read_grammar_from_file("testGrammar.json")
+
+    def __check_productions(self):
+        for production in self.get_productions():
+            if not self.is_symbol_in_grammar(production.get_left_side()):
+                raise ValueError("{0} not a valid symbol in grammar".format(production.get_left_side))
+            for symbol in production.get_right_side():
+                if not self.is_symbol_in_grammar(symbol):
+                    raise ValueError("{0} not a valid symbol in grammar".format(symbol))
+
+    def __perform_substitution(self):
+        if self.__substitution_map is None:
+            return
+
+        to_be_substituted = self.__substitution_map.keys()
+        self.__non_terminals = {self.__substitution_map.get(non_terminal, non_terminal) for non_terminal in
+                                self.__non_terminals}
+
+        self.__terminals = {self.__substitution_map.get(terminal, terminal) for terminal in
+                                self.__terminals}
+
+        self.__start_symbol = self.__substitution_map.get(self.__start_symbol, self.__start_symbol)
+        self.__empty_string = self.__substitution_map.get(self.__empty_string, self.__empty_string)
+
+        new_productions = {}
+
+        for left_side, right_lists in self.__productions.items():
+            left_side = self.__substitution_map.get(left_side, left_side)
+
+            right_lists = [[self.__substitution_map.get(symbol, symbol) for symbol in right_side] for right_side in
+                           right_lists]
+            new_productions[left_side] = right_lists
+
+        self.__productions = new_productions

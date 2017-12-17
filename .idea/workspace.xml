@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="337a2e82-8730-4164-88e2-1f0a6720420b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LL1/Parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MinilanguageGrammar/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MinilanguageGrammar/terminal_conversion.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grammar ll1.txt" afterPath="$PROJECT_DIR$/Grammar ll1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LL1/ParseTable.py" afterPath="$PROJECT_DIR$/LL1/ParseTable.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Grammar/ContextFreeGrammar.py" afterPath="$PROJECT_DIR$/Grammar/ContextFreeGrammar.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LL1/Parser.py" afterPath="$PROJECT_DIR$/LL1/Parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LL1/testGrammar.json" afterPath="$PROJECT_DIR$/LL1/testGrammar.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Grammar/newGrammar.json" afterPath="$PROJECT_DIR$/MinilanguageGrammar/minilanguageGrammar.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,118 +24,134 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ContextFreeGrammar.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Grammar/ContextFreeGrammar.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testGrammar.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LL1/testGrammar.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="299" column="25" lean-forward="false" selection-start-line="299" selection-start-column="9" selection-end-line="299" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FollowTable.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LL1/FollowTable.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test1.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LL1/tests/test1.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newGrammar.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Grammar/newGrammar.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8400">
-              <caret line="400" column="22" lean-forward="true" selection-start-line="400" selection-start-column="22" selection-end-line="400" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test2.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LL1/tests/test2.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParseTable.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LL1/ParseTable.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parser.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LL1/Parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Grammar ll1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Grammar ll1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="9" column="609" lean-forward="false" selection-start-line="9" selection-start-column="609" selection-end-line="9" selection-end-column="609" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="firstTable.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LL1/firstTable.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="ContextFreeGrammar.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Grammar/ContextFreeGrammar.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-10">
+                  <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="testGrammar.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LL1/testGrammar.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FollowTable.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LL1/FollowTable.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+                  <folding>
+                    <element signature="e#0#57#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test1.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LL1/tests/test1.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="231">
+                  <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="minilanguageGrammar.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/MinilanguageGrammar/minilanguageGrammar.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="545">
+                  <caret line="401" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="449" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="terminal_conversion.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/MinilanguageGrammar/terminal_conversion.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="482">
+                  <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="test2.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LL1/tests/test2.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="294">
+                  <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ParseTable.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/LL1/ParseTable.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="461">
+                  <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#57#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Parser.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/LL1/Parser.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="461">
+                  <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#0#57#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Grammar ll1.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Grammar ll1.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="terminal_conversion.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/MinilanguageGrammar/terminal_conversion.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -165,11 +184,13 @@
         <option value="$PROJECT_DIR$/LL1/tests.py" />
         <option value="$PROJECT_DIR$/LL1/FollowTable.py" />
         <option value="$PROJECT_DIR$/LL1/firstTable.py" />
-        <option value="$PROJECT_DIR$/Grammar/ContextFreeGrammar.py" />
-        <option value="$PROJECT_DIR$/LL1/testGrammar.json" />
         <option value="$PROJECT_DIR$/Grammar/newGrammar.json" />
         <option value="$PROJECT_DIR$/LL1/ParseTable.py" />
         <option value="$PROJECT_DIR$/Grammar ll1.txt" />
+        <option value="$PROJECT_DIR$/MinilanguageGrammar/terminal_conversion.json" />
+        <option value="$PROJECT_DIR$/MinilanguageGrammar/minilanguageGrammar.json" />
+        <option value="$PROJECT_DIR$/LL1/testGrammar.json" />
+        <option value="$PROJECT_DIR$/Grammar/ContextFreeGrammar.py" />
         <option value="$PROJECT_DIR$/LL1/Parser.py" />
       </list>
     </option>
@@ -223,8 +244,7 @@
             <path>
               <item name="ll1" type="b2602c69:ProjectViewProjectNode" />
               <item name="ll1" type="462c0819:PsiDirectoryNode" />
-              <item name="LL1" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="MinilanguageGrammar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -237,11 +257,12 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lab1/lftc" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sem5\lftc\lab4\ll1\MinilanguageGrammar" />
       <recent name="D:\sem5\lftc\lab4\ll1\LL1" />
     </key>
   </component>
@@ -571,8 +592,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.Parser" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ParseTable" />
-        <item index="2" class="java.lang.String" itemvalue="Python.tests" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tests" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ParseTable" />
         <item index="3" class="java.lang.String" itemvalue="Python.FollowTable" />
         <item index="4" class="java.lang.String" itemvalue="Python.firstTable" />
       </list>
@@ -627,7 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513455700571</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added parsing">
+      <created>1513506632440</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1513506632441</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -637,12 +665,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28807947" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28807947" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6103753" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48013246" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -667,25 +695,32 @@
     <MESSAGE value="Added test, fixed bugs" />
     <MESSAGE value="added Parse Table" />
     <MESSAGE value="fixed left recursion in minilanguage grammar" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed left recursion in minilanguage grammar" />
+    <MESSAGE value="added parsing" />
+    <option name="LAST_COMMIT_MESSAGE" value="added parsing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Grammar/ContextFreeGrammar.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Grammar/ContextFreeGrammar.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="21" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="new_productions" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Grammar/ContextFreeGrammar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="86" column="58" lean-forward="false" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LL1/FollowTable.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
@@ -696,7 +731,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Grammar/newGrammar.json">
+    <entry file="file://$PROJECT_DIR$/MinilanguageGrammar/minilanguageGrammar.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -753,7 +788,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Grammar/newGrammar.json">
+    <entry file="file://$PROJECT_DIR$/MinilanguageGrammar/minilanguageGrammar.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1001,6 +1036,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6783">
           <caret line="323" column="0" lean-forward="false" selection-start-line="323" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LL1/firstTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LL1/FollowTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LL1/tests/test1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1013,64 +1075,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LL1/tests/test1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grammar/ContextFreeGrammar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LL1/firstTable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LL1/FollowTable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Grammar/newGrammar.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8400">
-          <caret line="400" column="22" lean-forward="true" selection-start-line="400" selection-start-column="22" selection-end-line="400" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Grammar ll1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="609" lean-forward="false" selection-start-line="9" selection-start-column="609" selection-end-line="9" selection-end-column="609" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LL1/testGrammar.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="299" column="25" lean-forward="false" selection-start-line="299" selection-start-column="9" selection-end-line="299" selection-end-column="25" />
+        <state relative-caret-position="504">
+          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1085,9 +1093,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MinilanguageGrammar/minilanguageGrammar.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="401" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="449" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LL1/testGrammar.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Grammar/ContextFreeGrammar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinilanguageGrammar/terminal_conversion.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LL1/Parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
+        <state relative-caret-position="461">
           <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
