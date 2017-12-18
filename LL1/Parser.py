@@ -66,6 +66,7 @@ class Parser:
 
         return "->".join(" ".join([str(derivation_symbol) for derivation_symbol in derivation_elem]) for derivation_elem in derivations_string)
 
+
 if __name__ == "__main__":
     grammar = ContextFreeGrammar.get_test_grammar()
     ff = FirstTable(grammar)

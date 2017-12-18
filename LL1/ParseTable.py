@@ -36,11 +36,11 @@ class ParseTable:
         indexed_productions = {}
 
         for production_index, production in enumerate(self.__grammar.get_productions()):
-            indexed_productions[production_index]  = production
+            indexed_productions[production_index] = production
 
         self.__indexed_productions = indexed_productions
 
-    def __init__(self, context_free_grammar: ContextFreeGrammar, first_table:FirstTable, follow_table:FollowTable):
+    def __init__(self, context_free_grammar: ContextFreeGrammar, first_table: FirstTable, follow_table: FollowTable):
         self.__grammar = context_free_grammar
         self.__first_table = first_table
         self.__follow_table = follow_table
@@ -77,6 +77,6 @@ class ParseTable:
                 else:
                     follow_of_left_side = self.__follow_table.get_table()[production.get_left_side()]
                     for follow_non_terminal in follow_of_left_side:
-                        key = (production.get_left_side(), follow_non_terminal if not self.__grammar.is_empty_string(follow_non_terminal) else self.__empty_stack)
+                        key = (production.get_left_side(), follow_non_terminal if not self.__grammar.is_empty_string(
+                            follow_non_terminal) else self.__empty_stack)
                         self.__add_to_table(key, production_index)
-
