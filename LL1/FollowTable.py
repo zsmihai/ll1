@@ -27,7 +27,7 @@ class FollowTable:
                             set_for_update.update(self.__table[production.get_left_side()])
                         if len(sub_sequence) > 0:
                             set_for_update.update(first_of_subsequence)
-                        if not set_for_update.issubset(self.__table[symbol]) :
+                        if not set_for_update.issubset(self.__table[symbol]):
                             modified = True
                             self.__table[symbol].update(set_for_update)
 
