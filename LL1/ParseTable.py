@@ -70,9 +70,9 @@ class ParseTable:
 
             first_of_right_side = self.__first_table.first_for_sequence(production.get_right_side())
 
-            for non_terminal in first_of_right_side:
-                if not self.__grammar.is_empty_string(non_terminal):
-                    key = (production.get_left_side(), non_terminal)
+            for terminal in first_of_right_side:
+                if not self.__grammar.is_empty_string(terminal):
+                    key = (production.get_left_side(), terminal)
                     self.__add_to_table(key, production_index)
                 else:
                     follow_of_left_side = self.__follow_table.get_table()[production.get_left_side()]
